@@ -77,3 +77,17 @@ class AllPairShortestPath
         a.floydWarshall(graph);
     }
 }
+
+
+/*
+#include <limits.h>
+
+#define INF INT_MAX
+..........................
+if ( dist[i][k] != INF && 
+     dist[k][j] != INF && 
+     dist[i][k] + dist[k][j] < dist[i][j]
+    )
+ dist[i][j] = dist[i][k] + dist[k][j];
+...........................
+*/
